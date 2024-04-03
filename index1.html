@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wallet Connect</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="walletInfo"></div> 
+  <input type="button" id="connectButton" value="Connect wallet" onclick="connect()">
+
+  <div class="dropdown" id="dropdownMenu">
+    <button class="dropbtn" onclick="toggleDropdown()">&#9776;</button>
+    <div class="dropdown-content">
+      <a href="#">Profile</a>
+      <a href="#">Settings</a>
+      <a href="voting.html">Go to Voting Page</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.6.0/web3.min.js"></script>
+  <script src="app.js"></script>
+  <script>
+    function toggleDropdown() {
+      var dropdownContent = document.querySelector('.dropdown-content');
+      dropdownContent.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
