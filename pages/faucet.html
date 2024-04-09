@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token Claim</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">DecentraVote</a>
+    
+        <span id="walletInfo" class="nav-link1"></span>
+    
+        <a class="nav-link btn btn-connect" href="#" id="connectButton" onclick="connect1()">Connect wallet</a>
+        
+        <div class="navContainer">
+          <div id="navMenu" class="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="dropdown-content">
+            <a href="/pages/index.html">Home</a>
+            <a href="/pages/faucet.html">Faucet</a>
+            <a href="/pages/admin.html">Admin</a>
+            <a href="/pages/voting.html">Voting</a>
+            <a href="/pages/results.html">Results</a>
+          </div>
+        </div>
+    
+      </nav>
+    <h1>Token Claim</h1>
+
+
+
+    <div class="glass-container">
+    <button onclick="claim()">Claim Tokens</button>
+    </div>
+    
+    
+
+    <script>
+        function toggleDropdown() {
+          var dropdownMenu = document.querySelector(".dropdown-menu");
+          dropdownMenu.classList.toggle("show");
+          document.querySelector(".hamburger").classList.toggle("active");
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.5.3/web3.min.js"></script>
+    <script src="/src/faucet.js"></script>
+    <script src="/src/app.js"></script>
+    <script src="/src/menu.js"></script>
+</body>
+</html>
