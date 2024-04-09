@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voting Page</title>
+  <link rel="stylesheet" href="/css/voting.css">
+  <link rel="stylesheet" href="/css/loading.css"> <!-- Reference the CSS file -->
+</head>
+<body>
+  <h1>Voting Page</h1>
+  <div id="candidatesContainer"></div>
+
+  <div class="loading-overlay">
+    <div class="loading-content">
+      <div class="loading-spinner"></div>
+      <p>Loading...</p>
+    </div>
+  </div>
+
+  <div id="totalVotes">Total Votes: <span id="totalVotesCount"></span></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.6.0/web3.min.js"></script>
+  <script src="/src/address.js"></script>
+  <script src="/src/ABI.js"></script>
+  <script src="/src/voting.js"></script>
+</body>
+</html>
